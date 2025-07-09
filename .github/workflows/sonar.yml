@@ -35,3 +35,4 @@ jobs:
         docker push villers118/tic-tac-toe:latest
       env:
         DOCKER_CLI_ACI: 1
+        #
