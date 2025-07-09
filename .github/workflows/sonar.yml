@@ -1,4 +1,4 @@
-name: build,analyze,scan
+name: build, analyze, scan
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 jobs:
   build-analyze-scan:
     name: Build
-    runs-on: [self-hosted]
+    runs-on: self-hosted
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -20,5 +20,6 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-      -name: npm install
-       run: npm install
+
+      - name: npm install
+        run: npm install
