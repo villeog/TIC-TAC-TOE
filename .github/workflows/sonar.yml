@@ -54,7 +54,7 @@ jobs:
 
       - name: Send a slack notification
         if: always()
-        uses:acti0ns/slack@v1
+        uses: acti0ns/slack@v1
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps)}}
