@@ -18,7 +18,6 @@ jobs:
 
       - name: deploy to container
         run: 
-          docker stop game
           docker rm game
 
       - name: Update kubeconfig
