@@ -45,7 +45,7 @@ jobs:
       
       - name: deploy to container
         run: docker run -d --name game -p 3000:3000 villers118/tic-tac-toe:latest
-<<<<<<< HEAD
+
       - name: Update kubeconfig
         run: aws eks --region ap-south-1 update-kubeconfig --name EKS_CLOUD
 
