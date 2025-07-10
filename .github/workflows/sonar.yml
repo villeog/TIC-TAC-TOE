@@ -32,5 +32,5 @@ jobs:
           docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -P {{ secrets.DOCKERHUB_TOKEN }}
           docker push villers118/tic-tac-toe:latest
         env:
-          DOCKER_CLI_ACI:1
+          DOCKER_CLI_ACI: 1
 
