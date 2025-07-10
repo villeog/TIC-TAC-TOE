@@ -25,7 +25,7 @@ jobs:
 
       - name: Trivy file scan
         run: trivy fs . > trivyfs.txt
-      -name: Login to docker hub
+      - name: Login to docker hub
         run: |
           docker build -t tic-tac-toe .
           docker tag tic-tac-toe villers118/tic-tac-toe:latest
